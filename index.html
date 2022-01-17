@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- mobile msg-->
+<body>
+
+<div class="mobile" id="mobile">
+  <p id="msg">This websight is intended to be viewed on a PC. The Mobile version is stil in developement.
+    </p>
+    <button id="continue" onclick="mobileAlert()">Continue?</button>
+  </div>
+
+<!---->
+
+<!--main doc-->
+
+<!--Links-->
+    <head>
+
+
+        <link rel="stylesheet" href="Styles/load.css">
+        <link rel="stylesheet" href="imports/modal.css">
+        <link rel="stylesheet" href="imports/music.css">
+        <link rel="stylesheet" href="Styles/mainstyles.css">
+        <link rel="stylesheet" href="Styles/Background-animation.css">
+        <link rel="stylesheet" href="Styles/cards.css">
+        <link rel="stylesheet" href="Styles/Flyheader.css">
+        <link rel="stylesheet" href="Styles/menustyles.css">
+        <link rel="stylesheet" href="Styles/MainMobileStyling.css">
+
+        <script src="script/script.js"></script> 
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <meta charset="UTF-8">
+        <meta name="description" content="Gustav Kotze Portofolio">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Gustav Kotze">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<canvas class="backg"></canvas>
+
+
+
+<!--Loader-->
+
+  <div class="loader-container" id="preloader">
+    <h1>LOADING</h1>
+    <div class="loader"></div>
+    
+  </div>
+
+  <div id="welcome" style="display: none;"></div>
+
+  <script src="script/loadScript.js"></script> 
+  <a name="top"></a>
+
+<!---->
+
+  <header>
+
+  <div class = "topnav" id= "topnav" style="background-color: transparent">
+
+    <nav>
+          
+      <ul class="nav__links">
+
+<!--burger menu-->
+
+      <input type="checkbox" checked="checked" id="toggle" class="burgerMenu" onclick="openMenu()">
+      <label for="toggle">
+        <svg class = "burgerMain" id = "burgerMain" viewBox="0 0 100 80" width="40" height="40">
+          <rect class = "crossreverse1" id = "rect1" width="100" height="20" fill="white"></rect>
+          <rect class = "disableburger" id = "rect2" y = "30" y="30" width="100" height="20" fill="white"></rect>
+          <rect class = "crossreverse2" id = "rect3" y="60" width="100" height="20" fill="white" ></rect>
+        </svg>
+        <svg class = "crossMain" id = "crossMain" viewBox="0 0 100 80" width="40" height="40">
+          <rect id = "cross1" x="-10" width="100" height="20" fill="white"></rect>
+          <rect id = "cross2" y="80" x="8" width="100" height="20" fill="white"></rect>
+        </svg>
+      </label>
+
+<!---->
+
+<!-- desktop navbar -->
+
+          <div id="menu-window" class = "menu-window">
+                  <li id="lil"><div class="lil-planet"></div></li>
+                  <li><a onclick= "openMenu()" class = "menu-links" href="#top">Restart</a></li>
+                  <li><a onclick="closeMenu()" class = "menu-links" href="#projects">Projects</a></li>
+                  <li><a onclick="closeMenu()" class = "menu-links" href="#contacts">Contact</a></li>
+          </div>
+        </ul>
+      </nav>    
+    </div>    
+  </header>
+
+<!---->
+
+<!--Background planet-->
+
+    <div class="circle-container">
+        <canvas class="circle"></canvas>
+    </div><canvas class="circle_small"></canvas>
+      
+<!---->
+<article class="page-size">
+<!--Headers-->
+<div class="Desktop-Headers">
+  <div class="fullscreen-div" id="me">
+  <article class="me" >
+     
+      <em class="name">Hi, My Name Is <bold>Gustav Kotze</bold></em><br>
+      <em class="header_this">This<em class="header_is">Is</em></em><br>
+      <em class="header_my">My Creative Portofolio</em>
+      <em class="scroll_down">Scroll Down<br><i class="arrow down"></i></em>
+      
+  </article>
+  </div>
+
+  <article class="projects">
+      <em class="header_these">These</em><em class="header_are">Are</em><br>
+      <em class="header_my2">My</em><em class = "header_projects">Projects</em>
+  </article>
+
+
+
+  </div>
+<!--Mobile Headers-->
+
+<div class="Mobile-Headers">
+<p class="Mobile-Headers-text">
+      Hi, My Name Is <bold>Gustav Kotze</bold>
+      </p>
+      <p class="Mobile-Headers-text">
+      <bold>This</bold> Is My Creative Portofolio
+      </p>
+      <em class="scroll_down">Scroll Down<br><i class="arrow down"></i></em>
+</div>
+
+  <div class="breakWindow">
+
+</div>
+
+<!---->
+
+<!--cards-->
+
+  <article class="projects-slider__container" id ="projects" >
+    <p class="Music">HTML/CSS Projects</p>
+    
+  <section class="main" id ="projects">
+    <div class="flex-column" id="right">
+      <a class="project-a" href="https://goosmeister.github.io/landingpage.github.io/" target="_blank">
+    <div class="wrap wrap--1" id="card1">
+      <div class="container" id="container--1">
+        <p class="card">Landing Page</p>
+      </div>
+    </div>
+    </div>
+  </a>
+
+    <div class="flex-column" id="left">
+      <a href="https://goosmeister.github.io/TributePage.github.io/" target="_blank">
+    <div class="wrap wrap--2" id="card2">
+      <div class="container " id="container--2">
+        <p class="card">Tribute Page</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://goosmeister.github.io/blogWebPage.github.io/" target="_blank">
+    <div class="wrap wrap--3" id="card3">
+      <div class="container " id="container--3">
+        <p class="card">Blog(work in progress)</p>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <div class="flex-column" id="right">
+
+    <a href="https://goosmeister.github.io/aBasicForm.github.io/" target="_blank">
+      <div class="wrap wrap--6" id="card6">
+        <div class="container " id="container--6">
+          <p class="card">A Form</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://goosmeister.github.io/secondPortofolio.github.io/" target="_blank">
+    <div class="wrap wrap--5" id="card5">
+      <div class="container " id="container--5">
+        <p class="card">Previous Portofolio</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://goosmeister.github.io/3-column-preview/" target="_blank">
+    <div class="wrap wrap--4" id="card4">
+      <div class="container " id="container--4">
+        <p class="card">Frontend Mentor Project 1</p>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <a href="https://goosmeister.github.io/FEMentorProfileCard.github.io/" target="_blank">
+  <div class="flex-column" id="left">
+    <div class="wrap wrap--2" id="card2">
+      <div class="container " id="container--7">
+        <p class="card">Frontend Mentor Project 2</p>
+      </div>
+    </div>
+  </a>
+  <a href="https://goosmeister.github.io/gustavKotzePortofolio.github.io/" target="_blank">
+    <div class="wrap wrap--3" id="card3">
+      <div class="container " id="container--8">
+        <p class="card">Creative Portofolio</p>
+      </div>
+    </div>
+  </div>
+  </a>
+
+    <div class="flex-column" id="right">
+      <a class="project-a" href="https://goosmeister.github.io/FrontendMentorStatsPreviewCard.github.io/" target="_blank">
+    <div class="wrap wrap--1" id="card1">
+      <div class="container" id="container--9">
+        <p class="card">Stats Card Frontend Mentor</p>
+      </div>
+    </div>
+    
+  </a>
+  </div>
+  </section>
+  </article>
+
+  <!---->
+  <article class="Music-container">
+    <p class="Music" style="padding-bottom: 0.2vh;">Music</p>
+    <p class="Music-production">Production</p>
+    <div class="music-div">
+      <iframe id="youtube" src="https://www.youtube.com/embed/TgdgQFLKzOE" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+      </iframe>
+    </div>
+  </article>
+
+  <article class="Art-container">
+    <div class="winner">
+        <h1 id="art">Art</h1>
+        <h2 id="winner">Winner of the 2018 Playstation South Africa Art Competition</h2>
+        <img class="myImg" id="shadow" src="imports/images/shadow.jpg" alt="Shadow of the Colossus" onclick="onClick(this)">
+        <iframe id="fb" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FPlayStationSouthAfrica%2Fposts%2F1878293025535999&show_text=true&width=500" width="500" height="548" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+    </div>
+
+</div>
+ 
+  <div id="more">
+   
+        <img class="myImg" src="imports/images/Lion.jpg" alt="Lion Pencil" onclick="onClick(this)">
+        <img class="myImg" src="imports/images/faceY.jpg" alt="Face Art" onclick="onClick(this)">
+        <img class="myImg" src="imports/images/face space.png" alt="Space Face" onclick="onClick(this)">
+        <img class="myImg" src="imports/images/Face Pencil.jpg" alt="Face Pencil" onclick="onClick(this)">
+        
+    </div>
+
+</article>
+
+  <footer>
+    <div class="footer-info" id="contacts">
+      <p><span>Contact</span></p>
+      <a href="mailto:edgegustavkotze@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      <a href="https://www.linkedin.com/in/gustav-kotze-433853137/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Goosmeister" target="_blank">Github</a>
+  <p id="hosted">Hosted On GitHub Pages. 2021 © Gustav Kotze</p>
+    </div>
+  </footer>
+
+  </div>
+
+</article>
+<script>
+  function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<div class="modal-content">
+<img id="img01" style="max-width:100%">
+</div>
+</div>
+</body>
+</html>

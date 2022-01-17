@@ -1,0 +1,127 @@
+/*Desktop animation*/
+
+@media screen and (min-width: 900px) {
+.name{
+    animation: fly 1s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -2s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+
+  .header_this, .header_is{
+    animation: fly 1s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -2s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+  .header_portofolio, .header_my{
+    animation: fly 5s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -2s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+
+  .header_these, .header_are{
+    animation: fly-projects 1s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -6s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+  .header_projects, .header_my2{
+    animation: fly-projects 1200ms linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -6s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+  @keyframes fly{
+    0%{transform: translate(1vw);}
+    20%{transform: translate(120vw);}
+    50%{transform: translate(0vw);}
+  }
+
+  @keyframes fly-projects{
+    0%{transform: translate(-100vw);}
+    20%{transform: translate(-100vw);}
+    50%{transform: translate(30vw, 15vw);}
+    100%{transform: translate(30vw, 15vw);}
+  }
+
+  @keyframes arrow_gone{
+    0%{color: white;
+    border-color: white;}
+    100%{color: transparent;
+      border-color: transparent;}
+  }
+
+  .projects-slider__container{
+    transition: all 1s ease-in-out;
+    max-width: 100vw;
+    min-width: 100vw;
+    left: 0;
+    right: 100%;
+    min-height:60vw;
+    max-height: 60vw;
+    border-bottom: solid white 2px;
+    border-top: solid white 2px;
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.scroll_down{
+  font-style: normal;
+  font-size: 2vw;
+  position:absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  bottom: 20%;
+  top: 100%;
+  right: 100%;
+  left: -3%;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.scroll_down, .arrow, .down{
+  animation: arrow_gone 100ms linear infinite ;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+}

@@ -1,0 +1,280 @@
+.project-a{
+  padding: 0;
+  margin: 0;
+}
+
+#projects {
+  text-align: center;
+  align-self: center;
+  
+}
+
+
+
+.main {
+  
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  padding: 0.5vw;
+  margin: 0.5vw;
+  margin-left: 0.5vw;
+  z-index: 0;
+overflow: hidden;
+  background: linear-gradient(left rgba(54, 54, 54, 0.1), rgba(112, 112, 112, 0.2));
+  height: auto;
+
+}
+
+.main a, .project-a, #right, #left{
+  max-height: inherit;
+
+}
+
+.wrap{
+  box-shadow: inset 0 0 10px rgb(0, 0, 0);
+  border: 6px solid white;
+  border-radius: 4px;
+  cursor: default;
+  transition: all 500ms ease-out;
+  padding: 1vw;
+  margin: 1vw;
+  display: flex;
+  background: transparent;
+  height: fit-content;
+  width: auto;
+  overflow:hidden;
+}
+
+.container {
+  
+  align-self: center;
+  width: 75vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align:center; 
+  flex-direction: row;
+  background: transparent;
+  overflow:hidden;
+}
+.flex-column{
+  height:max-content;
+  cursor:default !important;
+  z-index: 0;
+}
+
+.projects a, .flex-column a{
+  cursor:default !important;
+  z-index: 100;
+}
+.card {
+  align-self: center;
+  float: left;
+  color: black !important;
+  background: rgba(255, 255, 255, 0.8);
+  max-height: 10vw;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 5vw;
+  position:absolute;
+  left: 0;
+
+} 
+
+.card p{
+  color: #000;
+}
+
+a{
+  z-index: 100;
+}
+/* images */
+
+#container--1{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/LandingPagePS1.jpg');
+}
+
+#container--2{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/Goku.jpg');
+}
+
+#container--3{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/BlogShortStory.jpg');
+}
+
+#container--4{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/Frontend1.png');
+}
+
+#container--5{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/OldOldPortofolio.jpg');
+}
+
+#container--6{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/Form.jpg');
+}
+
+#container--7{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/profile.png');
+}
+
+#container--8{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/Untitled.jpg');
+}
+
+#container--9{
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+  background-image:url('../images/Stats.jpg');
+}
+
+.card {
+    box-shadow: 0 0 0.2vw black;
+    position: relative;
+    align-self:flex-end;
+    height: 10vh;
+    margin-bottom: 2rem;
+    margin: 0;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1vw;
+    }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    padding: 0.5vw;
+    margin: 0.5vw;
+    margin-left: 0.5vw;
+    z-index: 0;
+    backdrop-filter: opacity(0.2);
+    align-self: center;
+    justify-content: center;
+  }
+
+  .wrap{
+    margin: 1vw;
+    animation: slide 10s alternate infinite;
+    animation-timing-function: ease-in-out;
+    cursor: default;
+    transition: all 500ms ease-out;
+    position: relative;
+    display: flex;
+    background: rgba(0, 35, 63, 0.1);
+
+ 
+    padding: 2%;
+    
+  }
+  #card1 {
+    align-self: flex-start;
+    top: 11vw;
+  }
+  #card2 {
+    align-self:center;
+    top: 5vw;
+  }
+  #card3 {
+    align-self: center;
+    top: 6vw;
+  }
+
+  .container {
+    width: 17vw;
+    height: 10vw;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  article{
+    align-self: inherit;
+  }
+
+  .container:hover{
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+
+    }
+
+  .wrap:hover {
+    box-shadow: 0 0 10px rgb(255, 253, 253);
+    cursor: pointer;
+
+    transition: all 200ms ease-in-out;
+    background: white;
+    animation: 150ms shake alternate linear;
+    animation-iteration-count: 1;
+  }
+
+
+
+.port:hover{
+  animation: 150ms shake alternate linear;
+  animation-iteration-count: 1;
+}
+
+  @keyframes slide {
+    from{transform:translateX(-0.1rem);}
+    to{transform: translateX(0.1rem);}
+    }
+    
+  #left {
+      animation: slide 1s alternate infinite;
+      animation-timing-function: ease-in-out;
+    }
+      
+  #right {
+    animation: slide 1s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes shake {
+    0%{transform:translateX(-2px);}
+    25%{transform: translateX(2px);}
+    50%{transform:translateX(-2px);}
+  }
+/* deskotp sizing*/
+
+@media only screen and (min-width: 800px) {
+
+}
+
+/*  mobile */
+
+@media only screen and (max-width: 768px) /* mobile */{
+
+
+
+}
